@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_list_label"
+    android:layout_width="fill_parent"
+    android:paddingBottom="15.0dip"
+    android:layout_height="40.0dip" >
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="25.0dip"
+        android:background="#008aef"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15.0dip" />
+
+</RelativeLayout>

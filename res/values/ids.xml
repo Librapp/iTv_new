@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- layouts -->
+    <item name="tabs_layout" type="id"/>
+
+    <!-- tags -->
+    <item name="tag_holder" type="id"/>
+    <item name="tag_holder_click" type="id"/>
+    <item name="tag_holder_change" type="id"/>
+    <item name="tag_holder_position" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="auto_focus" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="channel" type="id"/>
+
+    <!-- activity -->
+    <item name="activity_main_tab" type="id"/>
+    <item name="activity_channel_detail" type="id"/>
+    <item name="activity_program_detail" type="id"/>
+
+    <!-- dialog -->
+    <item name="dialog_progress_small" type="id"/>
+
+</resources>

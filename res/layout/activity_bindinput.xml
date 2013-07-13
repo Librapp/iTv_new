@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ct_bind_all"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#a1000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ct_custom_dialog_all"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/alertview_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/custom_dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/d_null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/alertview_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/custom_dialog_title"
+                android:textColor="@color/c_white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/d_null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/alertview_line" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custom_dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                 android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/input_qrcode_tips"
+                    android:textColor="@color/c_white"
+                     android:layout_gravity="center"
+                      android:gravity="center"
+                    android:textSize="16dp"
+                    android:textStyle="bold" 
+                    android:layout_marginBottom="10dp  "
+                    />
+
+                <EditText
+                    android:id="@+id/bindinput_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/input_qrcode_edit_bg"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:minEms="8"
+                    android:paddingLeft="15dp"
+                    android:textSize="19dp"
+                    android:textColor="@color/c_white"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <Button
+                android:id="@+id/bindinput_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/alertview_button_blue"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/Certain"
+                android:textColor="#ffa826"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/bindinput_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/alertview_button_grey"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/cancel"
+                android:textColor="#999999"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
